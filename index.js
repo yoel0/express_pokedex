@@ -10,21 +10,21 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 
-// GET / - main index of site
+// GET - main index of site
 app.get('/', function(req, res) {
-  var pokemonUrl = 'http://pokeapi.co/api/v2/pokemon/';
+  let pokemonUrl = 'http://pokeapi.co/api/v2/pokemon/';
   // Use request to call the API
-  axios.get(pokemonUrl).then( function(apiResponse) {
-    var pokemon = apiResponse.data.results;
+  axios.get(pokemonUrl).then(response => {
+    let pokemon = response.data.results;
     res.render('index', { pokemon: pokemon.slice(0, 151) });
-  })
+  });
 });
 
 // Imports all routes from the pokemon routes file
 app.use('/pokemon', require('./routes/pokemon'));
 
-var server = app.listen(port, function() {
-  console.log('...listening on', port );
+const server = app.listen(port, () => {
+  console.log(`Server is running on ${port}`);
 });
 
 module.exports = server;
