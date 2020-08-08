@@ -1,0 +1,22 @@
+body {
+  background-color: whitesmoke;
+}
+
+/* div {
+  display: inline-block;
+  max-width: 30%;
+} */
+
+#logo {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.error {
+  position: absolute;
+  top: 10%;
+  font-family: "Tomorrow", sans-serif;
+  color: black;
+  text-align: center;
+}
