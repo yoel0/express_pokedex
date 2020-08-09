@@ -3,7 +3,7 @@
 <p><%= pokemon.length %> favorites!</p>
 
 <% pokemon.forEach((p)=>{ %>
-<div class="well">
+<div>
   <h3>
     <a href="/pokemon/<%= p.name %>">
       <%= p.name %>
@@ -11,7 +11,9 @@
   </h3>
   <form method="POST" action="/pokemon?_method=DELETE">
     <input type="hidden" name="name" value="<%= p.name %>" />
-    <button type="submit">Release back into the Wild..</button>
+    <button class="btn waves-effect red darken-4" type="submit">
+      Release back into the Wild..
+    </button>
   </form>
 </div>
 <% }); %>

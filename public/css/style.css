@@ -1,5 +1,6 @@
 body {
-  background-color: whitesmoke;
+  background-color: #3b4cca;
+  text-align: center;
 }
 
 /* div {
@@ -19,4 +20,13 @@ body {
   font-family: "Tomorrow", sans-serif;
   color: black;
   text-align: center;
+}
+
+.sprite {
+  border-radius: 25px;
+  border: 5px solid #b3a125;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  background: #ffde00;
 }

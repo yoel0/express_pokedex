@@ -1,7 +1,19 @@
 <h2><%= pokedata.order %> - <%= pokedata.name %></h2>
-
-<img src="<%= pokedata.sprites.front_default %>" />
-
+<div>
+  <img
+    class="sprite"
+    src="<%= pokedata.sprites.front_default %>"
+    alt="Sprite"
+  />
+</div>
+<div>
+  <h3>Shiny Version</h3>
+  <img
+    class="sprite"
+    src="<%= pokedata.sprites.front_shiny %>"
+    alt="Sprite Shiny"
+  />
+</div>
 <div>
   <h3>Types:</h3>
 
