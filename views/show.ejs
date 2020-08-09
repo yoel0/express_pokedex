@@ -22,11 +22,13 @@
     />
   </div>
   <div class="col s4">
-    Statistics
-    <hr />
-    height:<%= pokedata.height %> weight:<%= pokedata.weight %> Types: <%
-    pokedata.types.forEach((t)=>{ %>
-    <p class="<%= t.type.name %>"><%= t.type.name %></p>
-    <% }); %>
+    <div class="polarid">
+      <strong><em> >Statistics/</em></strong
+      ><br />
+      height:<%= pokedata.height %> weight:<%= pokedata.weight %> <br />
+      Types: <% pokedata.types.forEach((t)=>{ %>
+      <p class="<%= t.type.name %>"><%= t.type.name %></p>
+      <% }); %>
+    </div>
   </div>
 </div>
