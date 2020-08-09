@@ -1,29 +1,29 @@
-<h2><%= pokedata.order %> - <%= pokedata.name %></h2>
-<div>
-  <img
-    class="sprite"
-    src="<%= pokedata.sprites.front_default %>"
-    alt="Sprite"
-  />
-</div>
-<div>
-  <h3>Shiny Version</h3>
-  <img
-    class="sprite"
-    src="<%= pokedata.sprites.front_shiny %>"
-    alt="Sprite Shiny"
-  />
-</div>
-<div>
-  <h3>height:</h3>
-  <%= pokedata.height %>꩜
-  <h3>weight:</h3>
-  <%= pokedata.weight %>
-</div>
-<div>
-  <h3>Types:</h3>
+<p class="flow-text"><%= pokedata.order %> - <%= pokedata.name %></p>
 
-  <% pokedata.types.forEach((t)=>{ %>
-  <h4 class="<%= t.type.name %>"><%= t.type.name %></h4>
-  <% }); %>
+<div class="row">
+  <div class="col s4">
+    Normal Version
+    <hr />
+    <img
+      class="sprite"
+      src="<%= pokedata.sprites.front_default %>"
+      alt="Sprite"
+    />
+  </div>
+  <div class="col s4">
+    Shiny Version
+    <hr />
+    <img
+      class="sprite"
+      src="<%= pokedata.sprites.front_shiny %>"
+      alt="Sprite Shiny"
+    />
+  </div>
+  <div class="col s4" id="transwindow">
+    height:<%= pokedata.height %> weight:<%= pokedata.weight %>
+    <hr />
+    Types: <% pokedata.types.forEach((t)=>{ %>
+    <p class="<%= t.type.name %>"><%= t.type.name %></p>
+    <% }); %>
+  </div>
 </div>
