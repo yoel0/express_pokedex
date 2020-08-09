@@ -3,6 +3,11 @@ body {
   text-align: center;
 }
 
+#title {
+  margin: 10px auto;
+  display: block;
+}
+
 #logo {
   position: relative;
   width: 70px;
@@ -25,6 +30,15 @@ body {
   height: 150px;
   background: #ffde00;
 }
+
+/* .transwindow {
+  border-radius: 25px;
+  border: 5px solid #b3a125;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.2);
+} */
 
 hr {
   border: 0;
@@ -95,4 +109,29 @@ hr {
 
 .water {
   color: blue;
+}
+
+span {
+  display: inline-block;
+  animation: weeee 6s linear infinite alternate;
+  text-align: center;
+}
+
+@keyframes weeee {
+  0% {
+    color: transparent;
+  }
+  25% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  75% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    transform: translateX(101%);
+    color: black;
+  }
 }

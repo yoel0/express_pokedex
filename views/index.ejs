@@ -1,12 +1,19 @@
 <div class="container">
-  <h1 class="text-center">The Original 151 Pokemon</h1>
+  <img src="/img/og-151.png" alt="title" id="title" />
+  <span> Legendary Gym Masters - Seanny Phoenix, Steven Peters</span>
+  <span>
+    Elite 4 - Shane Bendak, Branden Goldberg, Levin Battalones, Lemon mdfkn'
+    Garrett</span
+  >
+  <span>Professor Oak - ADAM HONORE [OUR ROCK]</span>
   <% pokemon.forEach((pokemon) => { %>
   <div class="well">
     <h2><%= pokemon.name %></h2>
     <form method="POST" action="/pokemon">
       <input hidden type="text" name="name" value="<%= pokemon.name %>" />
       <button class="btn waves-effect red darken-4" type="submit">
-        Add to Favorite Pokemon <i class="material-icons right">send</i>
+        A wild Pokémon has APPEARED, catch mi
+        <i class="material-icons right">send</i>
       </button>
     </form>
   </div>

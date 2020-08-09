@@ -1,4 +1,6 @@
-<p class="flow-text"><%= pokedata.order %> - <%= pokedata.name %></p>
+<p class="flow-text">
+  Pokédex ID# <%= pokedata.order %> - <%= pokedata.name %>
+</p>
 
 <div class="row">
   <div class="col s4">
@@ -19,10 +21,11 @@
       alt="Sprite Shiny"
     />
   </div>
-  <div class="col s4" id="transwindow">
-    height:<%= pokedata.height %> weight:<%= pokedata.weight %>
+  <div class="col s4">
+    Statistics
     <hr />
-    Types: <% pokedata.types.forEach((t)=>{ %>
+    height:<%= pokedata.height %> weight:<%= pokedata.weight %> Types: <%
+    pokedata.types.forEach((t)=>{ %>
     <p class="<%= t.type.name %>"><%= t.type.name %></p>
     <% }); %>
   </div>
