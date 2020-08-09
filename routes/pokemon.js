@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// GET /pokemon - data
+// GET /pokemon - SHOW
 router.get("/:name", async (req, res) => {
   try {
     if (req.params && req.params.name) {

@@ -30,3 +30,62 @@ body {
   height: 150px;
   background: #ffde00;
 }
+.bug {
+  color: lightgreen;
+}
+
+.dragon {
+  color: lightseagreen;
+}
+
+.electric {
+  color: yellow;
+}
+
+.fighting {
+  color: orange;
+}
+
+.fire {
+  color: red;
+}
+
+.flying {
+  color: khaki;
+}
+
+.ghost {
+  color: purple;
+}
+
+.grass {
+  color: green;
+}
+
+.ground {
+  color: burlywood;
+}
+
+.ice {
+  color: lightblue;
+}
+
+.normal {
+  color: white;
+}
+
+.poison {
+  color: darkmagenta;
+}
+
+.psychic {
+  color: violet;
+}
+
+.rock {
+  color: brown;
+}
+
+.water {
+  color: blue;
+}
