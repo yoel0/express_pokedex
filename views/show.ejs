@@ -25,7 +25,8 @@
     <div class="polarid">
       <strong><em> >Statistics/</em></strong
       ><br />
-      height:<%= pokedata.height %> weight:<%= pokedata.weight %> <br />
+      height:<%= pokedata.height/10 %> m weight:<%= pokedata.weight/10 %> kg
+      <br />
       Types: <% pokedata.types.forEach((t)=>{ %>
       <p class="<%= t.type.name %>"><%= t.type.name %></p>
       <% }); %>
